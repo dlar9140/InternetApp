@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A4F50BE21C4059200CC3368 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F50BD21C4059200CC3368 /* InternetDetailViewController.swift */; };
+		6A4F50C221C40C4400CC3368 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F50C121C40C4400CC3368 /* InternetMasterViewController.swift */; };
 		6A9D791321C16F3F007E3A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9D791221C16F3F007E3A36 /* AppDelegate.swift */; };
 		6A9D791521C16F3F007E3A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9D791421C16F3F007E3A36 /* ViewController.swift */; };
 		6A9D791821C16F3F007E3A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9D791621C16F3F007E3A36 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		6A4F50BD21C4059200CC3368 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		6A4F50C121C40C4400CC3368 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		6A9D790F21C16F3F007E3A36 /* InternetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9D791221C16F3F007E3A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A9D791421C16F3F007E3A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				6A9D791421C16F3F007E3A36 /* ViewController.swift */,
 				6A4F50BD21C4059200CC3368 /* InternetDetailViewController.swift */,
+				6A4F50C121C40C4400CC3368 /* InternetMasterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9D791521C16F3F007E3A36 /* ViewController.swift in Sources */,
+				6A4F50C221C40C4400CC3368 /* InternetMasterViewController.swift in Sources */,
 				6A4F50BE21C4059200CC3368 /* InternetDetailViewController.swift in Sources */,
 				6A9D791321C16F3F007E3A36 /* AppDelegate.swift in Sources */,
 			);
