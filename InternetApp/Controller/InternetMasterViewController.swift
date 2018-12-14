@@ -40,3 +40,20 @@ class InternetMasterViewController: UITableViewController
         internetDetail = currentControllers[0] as? InternetDetailViewController
     }
 }
+
+    //This method only happens once with the split view
+    public override func viewDidLoad() -> Void
+    {
+        super.viewDidLoad()
+
+        setupDetailContents()
+        self.clearsSelectionOnViewWillAppear = false
+
+        if let split = splitViewController
+        {
+            let controllers = split.viewControllers
+            internetDetail = (controllers[controllers.count-1] as! UINavigationController).topViewController as? InternetDetailViewController
+        }
+    }
+}
+
