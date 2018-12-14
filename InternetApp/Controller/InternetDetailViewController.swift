@@ -7,7 +7,7 @@
 //
 
 import UIKit
-importWebKit
+import WebKit
 
 public class InternetDetailViewController: UIViewController
 {
@@ -43,7 +43,7 @@ public class InternetDetailViewController: UIViewController
             {
                 if (detailAddress != nil)
                 {
-                    loadURL(webaddress: detailAddress!)
+                    loadURL(webAddress: detailAddress!)
                 }
             }
             screenTitle?.text = detailTitle
@@ -72,4 +72,4 @@ public class InternetDetailViewController: UIViewController
             webViewer.load(requestedPDF as URLRequest)
         }
     }
-
+}
