@@ -56,4 +56,42 @@ class InternetMasterViewController: UITableViewController
         }
     }
 }
+/**
+ This method will execute multiple times aka every tine the menu (master is displayed
+ */
+public override func viewWillAppear(_ animated: Bool) -> Void
+    {
+        clearSelectionOnViewWillAppear = splitViewController!.isCollapsed
+    
+        super.viewWillAppear(animated)
+    
+    }
 
+    // Mark: - Table View
+
+public override func tableView(_ tagbleView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return addresses.count
+    }
+
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+
+        let rowText = internetTopics[indexPath.row]
+        cell.textLabel!.text = rowText
+        return cell
+    }
+
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        internetDetail?.detailAddress = addresses[indexPath.row]
+        internetDetail?.detailTitle = internetTopics[indexPath.row]
+        if (internetDetail != nil)
+        {
+            splitViewController?.showDetailViewController(internetDetail!, sender: nil)
+        }
+
+    }
+
+}
