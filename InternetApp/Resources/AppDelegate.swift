@@ -11,10 +11,8 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISolitViewControllerDelegate
 {
-
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Override point for customization after application launch.
@@ -53,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISolitViewControllerDele
     {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController
             else
-    { return false }
+        { return false }
     guard let topAsDetailController = secondaryasNavController.topViewController as? InternetDetailViewController
         else
     { return false }
