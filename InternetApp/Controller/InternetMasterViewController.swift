@@ -55,13 +55,13 @@ class InternetMasterViewController: UITableViewController
             internetDetail = (controllers[controllers.count-1] as! UINavigationController).topViewController as? InternetDetailViewController
         }
     }
-}
+
 /**
  This method will execute multiple times aka every tine the menu (master is displayed
  */
 public override func viewWillAppear(_ animated: Bool) -> Void
     {
-        clearSelectionOnViewWillAppear = splitViewController!.isCollapsed
+        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
     
         super.viewWillAppear(animated)
     
@@ -95,3 +95,4 @@ public override func tableView(_ tagbleView: UITableView, numberOfRowsInSection 
     }
 
 
+}

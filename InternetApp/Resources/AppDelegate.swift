@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISolitViewControllerDelegate
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate
 {
     var window: UIWindow?
     
@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISolitViewControllerDele
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController
             else
         { return false }
-    guard let topAsDetailController = secondaryasNavController.topViewController as? InternetDetailViewController
+    guard let topAsDetailController = secondaryAsNavController.topViewController as? InternetDetailViewController
         else
     { return false }
         
